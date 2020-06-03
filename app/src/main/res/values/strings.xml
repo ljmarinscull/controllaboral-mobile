@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FicheAqui</string>
+    <string name="title_worktime">Jornada</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="title_profile">Perfil</string>
+    <string name="close_week">
+        Lunes de 09:00 a 17:00
+        Martes de 09:00 a 17:00
+        Miércoles de 09:00 a 17:00
+        Jueves de 09:00 a 17:00
+        Viernes de 09:00 a 17:00"</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="total_hours_str">%1$sh:%2$sm</string>
+    <string name="options">Acciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

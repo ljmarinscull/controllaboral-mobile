@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_worktime">
+
+    <fragment
+        android:id="@+id/navigation_worktime"
+        android:name="com.cdsg.ficheaqui.ui.worktime.WorkTimeFragment"
+        android:label="@string/title_worktime"
+        tools:layout="@layout/fragment_worktime" >
+        <action
+            android:id="@+id/actionNavWorktimeToInfo"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/actionNavWorktimeToWorkTimeState"
+            app:destination="@id/workTimeStateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.cdsg.ficheaqui.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/documents_inbox" >
+        <action
+            android:id="@+id/action_notifications_to_docdetails"
+            app:destination="@id/navigation_doc_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.cdsg.ficheaqui.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_weekReport"
+            app:destination="@id/navigation_weekreport" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_doc_details"
+        android:name="com.cdsg.ficheaqui.ui.docdetails.DocumentDetails"
+        android:label="DocumentDetails" >
+        <argument
+            android:name="doc"
+            app:argType="com.cdsg.ficheaqui.data.Document" />
+        <action
+            android:id="@+id/action_docdetails_to_notifications"
+            app:destination="@id/navigation_notifications"
+            app:popUpTo="@+id/navigation_doc_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_weekreport"
+        android:name="com.cdsg.ficheaqui.ui.weekreport.WeekReportFragment"
+        android:label="WeekReport" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.cdsg.ficheaqui.ui.info.InfoFragment"
+        android:label="InfoFragment" />
+    <fragment
+        android:id="@+id/workTimeStateFragment"
+        android:name="com.cdsg.ficheaqui.ui.worktimestate.WorkTimeStateFragment"
+        android:label="WorkTimeStateFragment" >
+        <action
+            android:id="@+id/actionWorkTimeStateToInfo"
+            app:destination="@id/infoFragment" />
+    </fragment>
+</navigation>

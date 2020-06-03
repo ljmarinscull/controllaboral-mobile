@@ -1,0 +1,15 @@
+package com.cdsg.ficheaqui.data.network.retrofit
+
+interface AppApi {
+
+    @GET("/login")
+    suspend fun getImages(@Query("client_id") accessKey: String,
+                  @Query("page") page : Int,
+                  @Query("per_page") noPages : Int) : Response<List<UnsplashImageDetails>>
+
+    @GET("/logout")
+    suspend fun getPopularImages(@Query("client_id") accessKey: String,
+                         @Query("page") page : Int,
+                         @Query("per_page") noPages : Int,
+                         @Query("order_by") orderBy : String) : Response<List<UnsplashImageDetails>>
+}

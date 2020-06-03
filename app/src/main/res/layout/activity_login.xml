@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.cdsg.ficheaqui.ui.login.AuthViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/company_background">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_above="@+id/llLoginLayout"
+            android:contentDescription="@string/company_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            app:srcCompat="@drawable/ic_company_logo" />
+
+        <LinearLayout
+            android:id="@+id/llLoginLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Correo electrónico"
+                android:text="@={viewModel.user}"
+                android:inputType="textPersonName">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:theme="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:focusableInTouchMode="true"
+                android:ems="10"
+                android:text="@={viewModel.password}"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mbPassWordForgiben"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/llLoginLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+            android:text="¿Has olvidado la contraseña?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbLogin"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Iniciar sesión"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress_bar_circular_style" />
+    </RelativeLayout>
+</layout>

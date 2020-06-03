@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#316EE7</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">#316EE7</item>
+        <item name="colorPrimaryDark">#084ACF</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#084ACF</item>
+        <item name="colorControlNormal">#316EE7</item>
+    </style>
+
+    <style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#808080</item>
+        <item name="android:layout_height">45dip</item>
+    </style>
+</resources>

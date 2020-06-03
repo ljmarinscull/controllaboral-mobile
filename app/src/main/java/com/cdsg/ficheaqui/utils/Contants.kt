@@ -1,0 +1,25 @@
+package com.cdsg.ficheaqui.utils
+
+val COMPANY_NAME = "Centro Comercial AlCampo"
+val WORKER       = "Armando Iglesias Ferrer"
+val WORKTIME     = "worktime"
+
+//COLLECTIONS
+val ADMINUSERS = "adminusers"
+val COMPANY = "company"
+val CONTROLLABORAL = "controllaboral"
+val DOCUMENTS = "documents"
+val NOMENCLATORS = "nomenclators"
+val EMPLOYEES = "employess"
+val NOTIFICATIONS = "notifications"
+val WORKED = "worked"
+val FOR_VACATIONS = "vacations"
+val FOR_AUSENT = "ausent"
+val FOR_HOLLIDAY = "holliday"
+val GEO = "geo"
+val WORKTIMES = "worktimes"
+val WORKEDDAYS = "workeddays"
+val DAYS = "days"
+val WORKTIME_CORRECTED = "WORKTIME_CORRECTED"
+val NOTY_TYPE = "noti_type"
+val DATA = "data"

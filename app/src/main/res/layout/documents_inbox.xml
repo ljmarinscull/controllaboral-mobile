@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.cdsg.ficheaqui.ui.notifications.NotificationsViewModel" />
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@drawable/company_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:layout_above="@+id/listView"
+            android:gravity="center"
+            android:text="Documentos\n pendientes de firmar"
+            android:layout_marginBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_margin="8dp"
+            android:divider="#8A8984"
+            android:dividerHeight="2dp"
+            android:background="@drawable/rounded_corner"
+            tools:listitem="@android:layout/simple_list_item_1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress_bar_circular_style" />
+    </RelativeLayout>
+</layout>

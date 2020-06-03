@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/company_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCloseWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:text="Cerrar Semana"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/tvCloseWeek"
+        android:background="@drawable/rounded_corner">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="4dp"
+            android:maxLines="5"
+            android:lines="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/close_week"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:text="Firma"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_corner"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mbSignDoc"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/signContainer"
+        android:text="Firmar y Cerrar"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

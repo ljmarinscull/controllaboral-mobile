@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:id="@+id/timesContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rlTotalHours" />
+
+        <RelativeLayout
+            android:id="@+id/rlTotalHours"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <TextView
+                android:id="@+id/tvTotalStr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total de horas a trabajar:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/tvTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:text="@string/total_hours_str"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>
+

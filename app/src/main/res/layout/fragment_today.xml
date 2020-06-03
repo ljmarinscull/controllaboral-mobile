@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="58dp"
+    android:background="@drawable/company_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEmployedStr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Empleado"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWorkerName"
+        android:layout_width="239dp"
+        android:layout_height="30dp"
+        android:text="Armando Iglesias Garcia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvEmployedStr"
+        app:layout_constraintStart_toStartOf="@+id/tvEmployedStr"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployedStr" />
+
+    <TextView
+        android:id="@+id/tvCompanyStr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Empresa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvWorkerName"
+        app:layout_constraintStart_toStartOf="@+id/tvWorkerName"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkerName" />
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Centro Comercial AlCampo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyStr" />
+
+    <TextView
+        android:id="@+id/tvWorkTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Jornada Laboral"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvCompanyName"
+        app:layout_constraintStart_toStartOf="@+id/tvCompanyName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyName" />
+
+    <com.cdsg.ficheaqui.ui.components.WorkTimeView
+        android:id="@+id/workTimeView"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

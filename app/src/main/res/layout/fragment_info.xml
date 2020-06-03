@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/company_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="64dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvThanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gracias"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/tvMessageStr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasta la próxima Jornada :)"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>
